@@ -3,7 +3,7 @@ SublimeLinter-contrib-git-lint-commit
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-git-lint-commit.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-git-lint-commit)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [git-lint-commit](https://github.com/woodruffw/dotfiles/blob/master/scripts/git-lint-commit). It will be used with files that have the “commit-message” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [git-lint-commit](https://yossarian.net/snippets#git-lint-commit). It will be used with files that have the “commit-message” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
@@ -12,7 +12,7 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 Before using this plugin, you must ensure that `git-lint-commit` is installed on your system. To install `git-lint-commit`, do the following:
 
 ```
-$ wget https://raw.githubusercontent.com/woodruffw/dotfiles/master/scripts/git-lint-commit
+$ wget https://raw.githubusercontent.com/woodruffw/snippets/master/git-lint-commit/git-lint-commit.rb
 $ cp git-lint-commit /somewhere/on/your/path
 ```
 
