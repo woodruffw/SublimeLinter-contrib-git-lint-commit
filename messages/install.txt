@@ -1,0 +1,10 @@
+SublimeLinter-contrib-git-lint-commit
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to git-lint-commit.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/woodruffw/SublimeLinter-contrib-git-lint-commit
