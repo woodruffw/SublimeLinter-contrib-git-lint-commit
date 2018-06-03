@@ -15,7 +15,7 @@ from SublimeLinter.lint import Linter, util
 
 class GitLintCommit(Linter):
     """Provides an interface to git-lint-commit."""
-    syntax = ('commit-message')
+    selector = 'text.git.commit'
     cmd = 'git-lint-commit -'
     version_args = '--version'
     version_re = r'git-lint-commit version (?P<version>\d+\.\d+\.\d+)\.'
