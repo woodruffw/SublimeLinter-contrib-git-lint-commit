@@ -12,6 +12,7 @@
 
 from SublimeLinter.lint import Linter, util
 
+
 class GitLintCommit(Linter):
     """Provides an interface to git-lint-commit."""
     syntax = ('commit-message')
