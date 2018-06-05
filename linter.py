@@ -15,8 +15,10 @@ from SublimeLinter.lint import Linter, util
 
 class GitLintCommit(Linter):
     """Provides an interface to git-lint-commit."""
-    selector = 'text.git.commit'
     cmd = 'git-lint-commit -'
     regex = r'^(?:(?P<warning>W)|(?P<error>E)): Line (?P<line>\d+): (?P<message>.+)'
     error_stream = util.STREAM_BOTH
     line_col_base = (1, 1)
+    defaults = {
+        'selector': 'text.git.commit'
+    }
