@@ -2,6 +2,7 @@ SublimeLinter-contrib-git-lint-commit
 ================================
 
 [![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-git-lint-commit.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-git-lint-commit)
+![license](https://raster.shields.io/badge/license-MIT%20with%20restrictions-green.png)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [git-lint-commit](https://yossarian.net/snippets#git-lint-commit). It will be used with content that has the "text.git.commit" selector.
 
