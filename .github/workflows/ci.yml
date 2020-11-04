@@ -25,11 +25,3 @@ jobs:
         run: |
           black --check .
           flake8 . --max-line-length=120
-  lint-js:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: eslint
-        run: |
-          sudo npm install eslint --global
-          eslint --no-eslintrc --parser-options=ecmaVersion:6 ff2mpv.js
