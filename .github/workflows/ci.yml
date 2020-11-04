@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+jobs:
+  lint:
+    strategy:
+      matrix:
+        python:
+          - "3.6"
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v1
+        with:
+          python-version: ${{ matrix.python }}
+      - name: deps
+        run: |
+          pip install flake8 black
+      - name: lint
+        run: |
+          black --check .
+          flake8 . --max-line-length=120
